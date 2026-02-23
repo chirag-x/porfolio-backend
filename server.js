@@ -61,6 +61,11 @@ Answer confidently and concisely.
   }
 });
 
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 app.listen(5000, () => {
   console.log("⚔ ASTA Server Running on http://localhost:5000");
+
 });
