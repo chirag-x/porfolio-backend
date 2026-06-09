@@ -16,7 +16,7 @@ app.post("/chat", async (req, res) => {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "nvidia/nemotron-3.5-content-safety:free",
+        model: "nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
         max_tokens: 300,
         temperature: 0.7,
         messages: [
